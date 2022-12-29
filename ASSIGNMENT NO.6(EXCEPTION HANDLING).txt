@@ -1,0 +1,31 @@
+import java.util.*;
+public class Exceptions{
+public static void main(String[] args){
+int n1,n2,res;
+Scanner sc=new Scanner(System.in);
+try{
+System.out.println("Enter First Number: ");
+n1=Integer.parseInt(sc.next());
+System.out.println("Enter Second Number: ");
+n2=Integer.parseInt(sc.next());
+res=n1/n2;
+System.out.println("Division: "+res);
+int x[]=new int[15];
+x[15]=10;
+System.out.println("x[15]= "+x[15]);
+}
+catch(ArithmeticException e){
+System.out.println("Denominator is Zero "+e+"\n");
+}
+catch(NumberFormatException e){
+System.out.println("Input is Wrong "+e+"\n");
+}
+catch(ArrayIndexOutOfBoundsException e){
+System.out.println("Wrong Index Number "+e+"\n");
+}
+}
+}
+
+
+
+ 
